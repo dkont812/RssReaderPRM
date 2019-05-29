@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+    <TextView
+            android:id="@+id/simple_text"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:text="Fill your name and Password"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    <EditText
+            android:id="@+id/new_name"
+            app:layout_constraintTop_toBottomOf="@+id/simple_text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:inputType="textPersonName"
+            android:hint="Full Name"
+            android:padding="10dp"
+            android:background="@drawable/login_input_bg"/>
+    <EditText
+            android:id="@+id/new_pass"
+            app:layout_constraintTop_toBottomOf="@id/new_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textVisiblePassword"
+            android:hint="Password"
+            android:padding="10dp"
+            android:background="@drawable/login_input_bg"/>
+    <Button
+            android:id="@+id/register_button"
+            app:layout_constraintTop_toBottomOf="@id/new_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+
+
+</android.support.constraint.ConstraintLayout>
